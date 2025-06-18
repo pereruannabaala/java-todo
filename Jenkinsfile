@@ -1,22 +1,24 @@
 pipeline{
     agent any
-    tools {
+    
+    tools{
         gradle "gradle"
     }
+    
     stages{
-        stage("Cloning repository"){
+        stage("Clone code"){
             steps{
                 git branch:"master", url:"https://github.com/kadimasum/java-todo.git"
             }
         }
         
-        stage("Building code"){
+        stage("Build code"){
             steps{
                 sh "gradle build"
             }
         }
         
-        stage("Testing code"){
+        stage("Test code"){
             steps{
                 sh "gradle test"
             }
