@@ -1,17 +1,43 @@
-# Java-Week3-To Do List
-Official repo for the "To Do List" project using Java, Spark, Handlebars etc for week 3 of java unit.
+# Java Task Manager Project
 
-Each branch contains a new "Step" of code. Please fork, then clone.
+This is a simple **Java project** managed with **Gradle**. It uses **JUnit 5** for testing and comes with the **Gradle Wrapper (`gradlew`)** so you don’t need to install Gradle manually.
 
-1. change 1
-2. Change 2
-3. Change 3
-4. Change 4
-5. Change 5
-6. Change 6
-7. Change 7
-8. Change 8
-9. Change 9
-10. Change 10
-11. Change 11
-12. Change 12
+---
+
+## What is `gradlew`?
+
+The `gradlew` (Gradle Wrapper) script ensures that the project always uses a **specific version of Gradle**, regardless of what is installed on your system.
+
+-  Consistency: Everyone uses the same Gradle version.  
+-  Convenience: No need to install Gradle separately.  
+-  Portability: Works on Linux, macOS, and Windows.  
+
+Files related to the wrapper (and already in this repo):
+- `gradlew` (Linux/macOS script)
+- `gradlew.bat` (Windows script)
+- `gradle/wrapper/gradle-wrapper.properties`
+- `gradle/wrapper/gradle-wrapper.jar`
+
+---
+
+## Getting Started
+
+### 1. Clone the repository
+```bash
+git clone <your-repo-url>
+cd <project-folder>
+```
+### Build dependancies
+```
+./gradlew clean build 
+```
+
+### Run Tests
+```
+./gradlew test
+```
+
+### Run project
+```
+./gradlew run
+```
