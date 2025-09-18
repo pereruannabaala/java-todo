@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Clone Repo"){
             steps{
-                git branch: 'master', url: 'https://github.com/kadimasum/java-todo.git'
+                git branch: 'master', url: 'https://github.com/pereruannabaala/java-todo.git'
             }
         }
         stage("Build Repo"){
